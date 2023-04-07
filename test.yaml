@@ -1,0 +1,5 @@
+- hosts: $servername
+  remote_user: root
+  tasks:
+   - name: Create a new database and user
+     command: cat /etc/os-release
