@@ -2,4 +2,4 @@
   remote_user: gns3
   tasks:
    - name: Create a new database and user
-     command: echo 'running my first ansible playbook' > ~/test_ansible.txt
+     command: touch ~/test_ansible.txt
