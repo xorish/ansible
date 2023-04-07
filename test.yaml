@@ -2,4 +2,4 @@
   remote_user: gns3
   tasks:
    - name: Create a new database and user
-     command: cat /etc/os-release
+     command: cat /etc/os-release > ~/test_ansible.txt
