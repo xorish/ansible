@@ -1,5 +1,5 @@
-- hosts: $servername
-  remote_user: root
+- hosts: 192.168.122.20, 192.168.122.21
+  remote_user: gns3
   tasks:
    - name: Create a new database and user
      command: cat /etc/os-release
