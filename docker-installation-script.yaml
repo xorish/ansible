@@ -7,6 +7,6 @@
      args:
       chdir: $HOME
    - name: Install Docker   
-     command: sudo /bin/bash ~/get-docker.sh
+     command: /bin/sh ~/get-docker.sh
      args:
       chdir: $HOME
