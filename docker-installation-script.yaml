@@ -2,8 +2,11 @@
   become: yes
   become_user: gns3
   tasks:
-   - name: Install Docker
+   - name: Get Docker Script
      command: curl -fsSL https://get.docker.com -o get-docker.sh
+     args:
+      chdir: $HOME
+   - name: Install Docker   
      shell: "rails assets:precompile"
      args:
       chdir: $HOME
