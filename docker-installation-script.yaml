@@ -1,4 +1,4 @@
-- hosts: kube-masters-group
+- hosts: all
   become: yes
   become_user: gns3
   tasks:
