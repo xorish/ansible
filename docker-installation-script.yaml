@@ -7,6 +7,6 @@
      args:
       chdir: $HOME
    - name: Install Docker   
-     shell: "rails assets:precompile"
+     shell: get-docker.sh
      args:
       chdir: $HOME
