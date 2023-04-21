@@ -1,0 +1,26 @@
+---
+- hosts: 192.168.122.20,192.168.122.30,192.168.122.31
+  become: true
+  tasks:
+    - name: Install aptitude
+      apt:
+        name: aptitude
+        state: latest
+        update_cache: true
+
+    - name: Install required system packages
+      apt:
+        pkg:
+          - apt-transport-https
+          - ca-certificates
+          - curl
+          - software-properties-common
+          - python3-pip
+          - virtualenv
+          - python3-setuptools
+        state: latest
+        update_cache: true
+    - name: Download Docker Script
+      command: curl -fsSL https://get.docker.com -o get-docker.sh
+    - name: Run Docker Script
+      command: sh get-docker.sh
