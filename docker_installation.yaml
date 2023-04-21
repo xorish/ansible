@@ -1,5 +1,5 @@
 ---
-- hosts: 192.168.122.20,192.168.122.30,192.168.122.31
+- hosts: all
   become: true
   tasks:
     - name: Install required system packages
