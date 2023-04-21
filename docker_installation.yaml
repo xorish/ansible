@@ -2,12 +2,6 @@
 - hosts: 192.168.122.20,192.168.122.30,192.168.122.31
   become: true
   tasks:
-    - name: Install aptitude
-      apt:
-        name: aptitude
-        state: latest
-        update_cache: true
-
     - name: Install required system packages
       apt:
         pkg:
