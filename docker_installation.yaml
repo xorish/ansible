@@ -4,4 +4,4 @@
     - name: Download Docker Script
       command: curl -fsSL https://get.docker.com -o get-docker.sh
     - name: Run Docker Script
-      command: sh /home/gns3/get-docker.sh
+      command: /bin/bash /home/gns3/get-docker.sh
