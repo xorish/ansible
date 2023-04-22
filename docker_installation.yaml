@@ -5,3 +5,5 @@
       command: curl -fsSL https://get.docker.com -o get-docker.sh
     - name: Run Docker Script
       command: /bin/bash /home/gns3/get-docker.sh
+    - name: Add user to the docker group
+      command: usermod -aG docker $USER
